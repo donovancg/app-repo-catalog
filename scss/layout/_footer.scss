@@ -1,0 +1,93 @@
+.footer {
+    height: 30vh;
+    background-color: $color-grey-dark-3;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    &__nav {
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+    }
+
+    &__ul {
+
+    }
+
+    &__li {
+        display: inline-block;
+        list-style: none;
+        margin: 0 5rem;
+    }
+
+    &__form {
+        display: inline-block;
+
+        &:focus {
+            & ~ li a {
+                opacity: 0;
+            }
+        }
+
+        &--input {
+            padding: 1rem 0;
+            font-size: $default-font-size;
+            color: $color-white;
+            border: none;
+            margin-right: 0;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            background-color: $color-grey-light-1;
+            transition: background-color .3s, padding .5s, color .5s;
+
+            &:focus {
+                outline: none;
+                background-color: $color-white;
+                padding: 1rem 3rem 1rem 2rem;
+                color: $default-font-color;
+
+                & + button {
+                    background-color: $color-grey-light-2;
+                    padding: 1rem 2rem;
+                    margin-left: -1rem;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        &--button {
+            padding: 1rem;
+            background-color: $color-grey-light-2;
+            border: none;
+            margin-left: -2rem;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            transition: padding .3s;
+
+            &:focus {
+                outline: none;
+            }
+
+            & i {
+                font-size: $default-font-size;
+            }
+        }
+    }
+
+    &__a,
+    &__a:link,
+    &__a:visited {
+        text-decoration: none;
+        color: $color-grey-dark;
+        font-weight: 300;
+    }
+
+    &__heading {
+        position: absolute;
+        top: 50%;
+        left: 4rem;
+        transform: translateY(-50%);
+        color: $color-grey-dark;
+    }
+}

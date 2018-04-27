@@ -1,0 +1,47 @@
+.view {
+    
+    &__table, &__tr, &__td {
+        border-collapse: collapse;
+    }
+
+    &__table {
+        margin: auto;
+    }
+
+    &__tr {
+
+        &--head {
+
+            & td {
+                font-weight: 700;
+                position: relative;
+                // color: $color-grey-dark;
+                font-size: 1.6rem;
+                text-align: center;
+                cursor: pointer;
+
+                & i {
+                    position: absolute;
+                    top: 50%;
+                    right: 4rem;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+    &__td {
+        width: 33.33333%;
+        padding: 2rem;
+        border: 1px solid $color-grey-light-2;
+        color: $color-grey-dark-3;
+
+        &--sort {
+            font-size: 1.8rem !important;
+
+            & a {
+                color: $color-black !important;
+            }
+        }
+    }
+}

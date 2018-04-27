@@ -1,0 +1,41 @@
+body {
+    font-family: $default-font-family, sans-serif;
+    font-size: $default-font-size;
+    color: $default-font-color;
+}
+
+.heading-primary {
+    @include centerHorizontalVertical;
+    color: $color-white !important;
+    font-weight: 300;
+    // animation-name: fadeInLeft;
+    // animation-duration: 1s;
+    // animation-timing-function: cubic-bezier(.38,.24,.43,.9);
+
+    & a {
+        color: $color-white;
+        text-decoration: none;
+    }
+}
+
+.heading-secondary {
+    // margin: 1rem auto -1rem auto;
+    text-align: center;
+    color: $color-primary;
+    margin: 2rem;
+    // display: inline-block;
+}
+
+.heading-tertiary {
+    font-weight: 400;
+    margin: 1.5rem;
+}
+
+a {
+    color: $color-link-blue;
+}
+
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}

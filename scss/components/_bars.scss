@@ -1,0 +1,37 @@
+.bars {
+
+    &__ul {
+        text-align: left;
+        display: inline-block;
+        padding: 0 2rem;
+    }
+
+    &__li {
+        list-style: none;
+        background-color: $color-grey-light-4;
+        margin: 1rem;
+        padding: 2rem 4rem 2rem 2rem;
+        width: 100%;
+        position: relative;
+
+        &:last-of-type {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        right: 1.5rem;
+        font-size: 2rem;
+        cursor: pointer;
+        color: $color-grey-dark-3;
+        transition: all .2s;
+        backface-visibility: hidden;
+        
+        &:hover {
+            color: $color-red;
+            font-size: 2.2rem;
+            margin-top: -.2rem;
+        }
+    }
+}

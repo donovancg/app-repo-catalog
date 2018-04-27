@@ -1,0 +1,18 @@
+.section-manage {
+
+    & .flex--manage {
+        // width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        
+        &__col {
+            width: 30%;
+            text-align: center;
+            min-height: calc(60vh - 1.5em - 8rem);
+            margin-bottom: 3rem;
+            background-color: $color-grey-light-1;
+        }
+    }
+}

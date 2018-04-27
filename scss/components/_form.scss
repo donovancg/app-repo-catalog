@@ -1,0 +1,63 @@
+.form {
+    text-align: center;
+
+    &__group {
+        margin: auto;
+        width: auto;
+        text-align: center;
+        margin: 2rem;
+    }
+
+    &__input {
+        padding: 1rem 2rem;
+        border-style: none;
+        border-bottom: 2px solid $color-grey-light-1;
+        margin-left: 1rem;
+
+        &:hover {
+            transition: border .2s;
+            border-bottom: 2px solid $color-grey-light-2;
+        }
+
+        &:focus {
+            transition: border .2s;
+            outline: none;
+            border-bottom: 2px solid $color-primary;
+        }
+    }
+
+    &__select {
+        margin-left: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    &__label {
+        font-weight: 100;
+        margin-right: 1rem;
+    }
+
+    &__submit {
+        padding: 1rem 2rem;
+        background-color: $color-primary;
+        color: $color-white;
+        border-style: none;
+    }
+
+    &__textarea {
+        font-family: $default-font-family;
+        font-size: 1.2rem;
+        padding: .5rem;
+        height: 200%;
+        resize: none;
+        display: block;
+        margin: auto;
+        margin-top: 2rem;
+        border: 1px solid $color-grey-light-2;
+        transition: border .3s;
+
+        &:focus {
+            outline: none;
+            border: 1px solid $color-grey-light-3;
+        }
+    }
+}
